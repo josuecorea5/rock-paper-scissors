@@ -29,24 +29,48 @@
         <p id="score">0</p>
       </div>
     </header>
-    <main>
-      <button class="btn-circle btn-paper" data-choise="paper">
+    <main id="main">
+      <button class="btn-circle btn-paper pick" data-choise="paper">
         <span class="wrapper">
           <img src="./images/icon-paper.svg" alt="paper-icon">
         </span>
       </button>
-      <button class="btn-circle btn-scissor" data-choise="scissors">
+      <button class="btn-circle btn-scissors pick" data-choise="scissors">
         <span class="wrapper">
           <img src="./images/icon-scissors.svg" alt="scissors-icon">
         </span>
       </button>
-      <button class="btn-circle btn-rock" data-choise="rock">
+      <button class="btn-circle btn-rock pick" data-choise="rock">
         <span class="wrapper">
           <img src="./images/icon-rock.svg" alt="rock-icon">
         </span>
       </button>
     </main>
+
+
     <button class="btn-rules">Rules</button>
+  </div>
+  <div class="selection" id="selection">
+    <div>
+      <h2>You picked</h2>
+      <button class="btn-circle btn-paper" id="user-select">
+        <span class="wrapper">
+          <img src="./images/icon-paper.svg" alt="paper-icon">
+        </span>
+      </button>
+    </div>
+    <div>
+      <p class="big-text">You <span id="win">win</span></p>
+      <button class="btn-play" id="reset">Play again</button>
+    </div>
+    <div>
+      <h2>The house picked</h2>
+      <button class="btn-circle btn-rock" id="computer-select">
+        <span class="wrapper">
+          <img src="./images/icon-rock.svg" alt="rock-icon">
+        </span>
+      </button>
+    </div>
   </div>
 
 
