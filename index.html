@@ -46,12 +46,17 @@
         </span>
       </button>
     </main>
+    <div class="rules-modal" id="rules-modal">
+        <img src="./images/image-rules.svg" alt="rules of game">
+        <button id="close-modal" >
+          <img src="./images/icon-close.svg"class="close-modal" alt="icon-close">
+        </button>
+    </div>
 
-
-    <button class="btn-rules">Rules</button>
+    <button class="btn-rules" id="open-rules">Rules</button>
   </div>
   <div class="selection" id="selection">
-    <div>
+    <div class="btn-user">
       <h2>You picked</h2>
       <button class="btn-circle btn-paper" id="user-select">
         <span class="wrapper">
@@ -59,11 +64,11 @@
         </span>
       </button>
     </div>
-    <div>
+    <div class="message-responsive">
       <p class="big-text">You <span id="win">win</span></p>
       <button class="btn-play" id="reset">Play again</button>
     </div>
-    <div>
+    <div class="btn-computer">
       <h2>The house picked</h2>
       <button class="btn-circle btn-rock" id="computer-select">
         <span class="wrapper">

@@ -147,7 +147,13 @@ main::before {
   right: 30px;
   font-family: inherit;
   padding: 10px 25px;
+  cursor: pointer;
+  transition: transform .3s;
   text-transform: uppercase;
+}
+
+.btn-rules:hover {
+  transform: scale(1.1) ;
 }
 
 .btn-play {
@@ -169,7 +175,8 @@ main::before {
 
 .selection {
   display: none;
-  justify-content: space-between;
+  justify-content: center;
+  flex-wrap: wrap;
   align-items: center;
   text-align: center;
   width: 800px;
@@ -190,3 +197,59 @@ main::before {
   text-transform: uppercase;
   margin: 0 0 20px;
 }
+.rules-modal {
+  background-color: #f0f0f0;
+  position: fixed;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 100;
+}
+
+.rules-modal button {
+  border: none;
+  background-color: transparent;
+  margin-top: 100px;
+  transform: scale(1.5);
+  cursor: pointer;
+}
+
+.close-modal:hover {
+  transform: scale(1.2);
+}
+
+@media (max-width: 768px) {
+  .message-responsive {
+    order: 1;
+  }
+  .selection {
+    width: 660px;
+  }
+}
+
+@media (max-width: 500px) {
+  .message-responsive {
+    order: 2;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .btn-user {
+    order: 1;
+  }
+  .btn-computer {
+    order: 3;
+  }
+  .btn-rules {
+    z-index: 100;
+    bottom: 0;
+  }
+}
+
+
+
+

@@ -6,6 +6,9 @@ const reset = document.getElementById('reset');
 const userSelect = document.getElementById('user-select');
 const computerSelect = document.getElementById('computer-select');
 const result = document.getElementById('win');
+const rulesModal = document.getElementById('rules-modal');
+const closeModal = document.getElementById('close-modal');
+const openModal = document.getElementById('open-rules');
 const choises = ['paper', 'rock', 'scissors'];
 
 let score = 0;
@@ -23,7 +26,13 @@ reset.addEventListener('click', () => {
   selection.style.display = 'none';
 })
 
+openModal.addEventListener('click', () => {
+  rulesModal.style.display = 'flex';
+})
 
+closeModal.addEventListener('click', () => {
+  rulesModal.style.display = 'none';
+})
 
 const checkWinner = () => {
   const computerChoise = randomChoise();
